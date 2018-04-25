@@ -17,7 +17,7 @@
 #import "ACFileData.h"
 #import "ACBtMetaInfoData.h"
 
-NSString * const EmbeddedAria2Version = @"1.28.0";
+NSString * const EmbeddedAria2Version = @"1.33.1";
 
 typedef std::vector<std::string> Uris;
 typedef uint64_t Gid;
@@ -54,7 +54,7 @@ typedef aria2::FileData FileData;
         dispatch_async(aria2Queue, ^{
             // BUG 如果 aria2c 运行有问题，整个 Maria 都会崩溃，待解决
             try {
-                aria2::run(session, aria2::RUN_DEFAULT);
+                aria2::run(self->session, aria2::RUN_DEFAULT);
             } catch(const char * msg) {
                 printf("%s", msg);
             }
@@ -72,7 +72,7 @@ typedef aria2::FileData FileData;
         std::this_thread::sleep_for(std::chrono::duration<double, std::milli>(100));
     }
     dispatch_async(aria2Queue, ^{
-        aria2::shutdown(session);
+        aria2::shutdown(self->session);
     });
     aria2::sessionFinal(session);
     aria2::libraryDeinit();

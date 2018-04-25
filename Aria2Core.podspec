@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.1"
   s.summary      = "aria2/libaria2 wrapper for Objective-C."
 
-  s.homepage     = "https://github.com/ShinCurry/Aria2Core"
+  s.homepage     = "https://github.com/shincurry/Aria2Core"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "ShinCurry"
 
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries  = "Aria2Core/Frameworks/*.dylib"
 
   s.xcconfig = {
-    'LD_RUNPATH_SEARCH_PATHS' => '@loader_path/Resources'
+    'LD_RUNPATH_SEARCH_PATHS' => '@executable_path/../Frameworks'
   }
 
 end

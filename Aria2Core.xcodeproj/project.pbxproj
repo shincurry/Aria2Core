@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		882CF2701F28FC77003533DD /* libaria2-1.32.0-maria.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882CF26F1F28FC77003533DD /* libaria2-1.32.0-maria.dylib */; };
 		884221131DB66104004B5F7D /* ACGlobalStatus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 884221111DB66104004B5F7D /* ACGlobalStatus.mm */; };
 		884221261DB7A126004B5F7D /* ACUriData.h in Headers */ = {isa = PBXBuildFile; fileRef = 884221241DB7A126004B5F7D /* ACUriData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		884221271DB7A126004B5F7D /* ACUriData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 884221251DB7A126004B5F7D /* ACUriData.mm */; };
@@ -19,6 +18,7 @@
 		88DAEE811D912A8900FF6E35 /* Aria2Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DAEE7F1D912A8900FF6E35 /* Aria2Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88DAEE891D912AE700FF6E35 /* aria2.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DAEE871D912AE700FF6E35 /* aria2.h */; };
 		88DAEE8A1D912AE700FF6E35 /* Aria2Core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88DAEE881D912AE700FF6E35 /* Aria2Core.mm */; };
+		88FB462F208EF9D60063315C /* libaria2-1.33.1-maria.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		882CF26F1F28FC77003533DD /* libaria2-1.32.0-maria.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libaria2-1.32.0-maria.dylib"; path = "Aria2Core/Frameworks/libaria2-1.32.0-maria.dylib"; sourceTree = "<group>"; };
 		884221101DB66104004B5F7D /* ACGlobalStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACGlobalStatus.h; sourceTree = "<group>"; };
 		884221111DB66104004B5F7D /* ACGlobalStatus.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACGlobalStatus.mm; sourceTree = "<group>"; };
 		884221241DB7A126004B5F7D /* ACUriData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACUriData.h; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		88DAEE801D912A8900FF6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DAEE871D912AE700FF6E35 /* aria2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = aria2.h; path = Aria2Core/aria2.h; sourceTree = "<group>"; };
 		88DAEE881D912AE700FF6E35 /* Aria2Core.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Aria2Core.mm; sourceTree = "<group>"; };
+		88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libaria2-1.33.1-maria.dylib"; path = "Aria2Core/Frameworks/libaria2-1.33.1-maria.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				882CF2701F28FC77003533DD /* libaria2-1.32.0-maria.dylib in Frameworks */,
+				88FB462F208EF9D60063315C /* libaria2-1.33.1-maria.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 		88DAEE8B1D912AFA00FF6E35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				882CF26F1F28FC77003533DD /* libaria2-1.32.0-maria.dylib */,
+				88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,7 +158,7 @@
 		88DAEE731D912A8900FF6E35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ShinCurry;
 				TargetAttributes = {
 					88DAEE7B1D912A8900FF6E35 = {
@@ -219,15 +219,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -271,15 +279,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -310,7 +326,7 @@
 		88DAEE851D912A8900FF6E35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = "";
@@ -335,7 +351,7 @@
 		88DAEE861D912A8900FF6E35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = "";
