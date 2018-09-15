@@ -17,7 +17,7 @@
 #import "ACFileData.h"
 #import "ACBtMetaInfoData.h"
 
-NSString * const EmbeddedAria2Version = @"1.33.1";
+NSString * const EmbeddedAria2Version = @"1.34.0";
 
 typedef std::vector<std::string> Uris;
 typedef uint64_t Gid;

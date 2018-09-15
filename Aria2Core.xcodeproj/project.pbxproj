@@ -15,10 +15,10 @@
 		8842212F1DB7A16A004B5F7D /* ACBtMetaInfoData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8842212D1DB7A16A004B5F7D /* ACBtMetaInfoData.mm */; };
 		889C5BBF1DB88C8900625C82 /* ACGlobalStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 884221101DB66104004B5F7D /* ACGlobalStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		889C5BC01DB88CDE00625C82 /* ACFileData.h in Headers */ = {isa = PBXBuildFile; fileRef = 884221281DB7A135004B5F7D /* ACFileData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B0904F214CE8DD00714C78 /* libaria2-1.34.0-maria.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B0904E214CE8DD00714C78 /* libaria2-1.34.0-maria.dylib */; };
 		88DAEE811D912A8900FF6E35 /* Aria2Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DAEE7F1D912A8900FF6E35 /* Aria2Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88DAEE891D912AE700FF6E35 /* aria2.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DAEE871D912AE700FF6E35 /* aria2.h */; };
 		88DAEE8A1D912AE700FF6E35 /* Aria2Core.mm in Sources */ = {isa = PBXBuildFile; fileRef = 88DAEE881D912AE700FF6E35 /* Aria2Core.mm */; };
-		88FB462F208EF9D60063315C /* libaria2-1.33.1-maria.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,12 +42,13 @@
 		884221291DB7A135004B5F7D /* ACFileData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACFileData.mm; sourceTree = "<group>"; };
 		8842212C1DB7A16A004B5F7D /* ACBtMetaInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACBtMetaInfoData.h; sourceTree = "<group>"; };
 		8842212D1DB7A16A004B5F7D /* ACBtMetaInfoData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ACBtMetaInfoData.mm; sourceTree = "<group>"; };
+		88B0904C214CE8D300714C78 /* Aria2Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Aria2Core; sourceTree = "<group>"; };
+		88B0904E214CE8DD00714C78 /* libaria2-1.34.0-maria.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libaria2-1.34.0-maria.dylib"; path = "Aria2Core/Frameworks/libaria2-1.34.0-maria.dylib"; sourceTree = "<group>"; };
 		88DAEE7C1D912A8900FF6E35 /* Aria2Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aria2Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DAEE7F1D912A8900FF6E35 /* Aria2Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aria2Core.h; sourceTree = "<group>"; };
 		88DAEE801D912A8900FF6E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DAEE871D912AE700FF6E35 /* aria2.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = aria2.h; path = Aria2Core/aria2.h; sourceTree = "<group>"; };
 		88DAEE881D912AE700FF6E35 /* Aria2Core.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Aria2Core.mm; sourceTree = "<group>"; };
-		88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libaria2-1.33.1-maria.dylib"; path = "Aria2Core/Frameworks/libaria2-1.33.1-maria.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88FB462F208EF9D60063315C /* libaria2-1.33.1-maria.dylib in Frameworks */,
+				88B0904F214CE8DD00714C78 /* libaria2-1.34.0-maria.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +110,8 @@
 		88DAEE8B1D912AFA00FF6E35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88FB462E208EF9D60063315C /* libaria2-1.33.1-maria.dylib */,
+				88B0904E214CE8DD00714C78 /* libaria2-1.34.0-maria.dylib */,
+				88B0904C214CE8D300714C78 /* Aria2Core */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
